@@ -1,0 +1,28 @@
+body {
+  width: max-content;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px 30px 30px 30px;
+  font-family: arial;
+}
+
+.weather-app {
+  padding: 30px;
+  border: solid 1px grey;
+  border-radius: 10px;
+  font-family: arial;
+  color: rgb(237, 238, 250);
+  letter-spacing: 0.5mm;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+h1 {
+  color: rgb(248, 107, 12);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+h2 {
+  padding-top: 10px;
+  font-size: 50px;
+  padding-bottom: 15px;
+}
