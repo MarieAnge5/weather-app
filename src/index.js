@@ -12,9 +12,9 @@ function App() {
         <div className="weather-app">
    <h1>Sunday, 19:34pm</h1>
           <Search />
-          <br />
         </div>
       </div>
+      <p><a href="https://github.com/MarieAnge5/weather-app">Open Source</a> coded by Marie Ange</p>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React , { useState } from "react";
 import axios from "axios";
+import './App.css';
 
 
 export default function Search() {
@@ -40,19 +41,26 @@ export default function Search() {
 
   if (loaded) {
     return (
-      <div>
+      <div className="Search"> 
+      <div className="row">
+          <div className="col-6">
         {form}
-        <ul>
             <h2>{message}</h2>
-          <li>Temperature:{Math.round(weather.temperature)}°C</li>
-          <li>Description:{weather.description}</li>
-          <li>Humidity:{weather.humidity}%</li>
-          <li>Wind:{weather.wind}km/hr</li>
-          <li>
+            </div>
+            <div className="col-6">
+            <h4>{weather.description}</h4>
+            </div>
+            </div>
+    
+          <h3>{Math.round(weather.temperature)}°C | ºF</h3>
+          <ul>
+          <p>
             <img src={weather.icon} alt="Weather Icon" />
-          </li>
+          </p>
+            <li>Humidity:{weather.humidity}%</li>
+          <li>Wind:{weather.wind}km/hr</li>
         </ul>
-      </div>
+        </div>
     );
   } else {
     return form;
